@@ -1,15 +1,39 @@
 package com.BankingApp;
 
 class BankAccount {
+
     private double balance;
+    private String uId;
+
+
 
     public BankAccount() {
 
     }
 
 
-    public BankAccount(double balance) {
+    public BankAccount(double balance, String uId) {
         this.balance = balance;
+        this.uId = uId;
+
+    }
+
+
+    public double getBalance() {
+        return balance;
+    }
+
+
+    public void setBalance(double balance) {
+        this.balance = balance;
+    }
+
+    public String getUId() {
+        return uId;
+    }
+
+    public void setUId(String uId) {
+        this.uId = uId;
     }
 
 
@@ -42,4 +66,6 @@ class BankAccount {
             System.out.println("Insufficient funds for transfer.");
         }
     }
+
+
 }
