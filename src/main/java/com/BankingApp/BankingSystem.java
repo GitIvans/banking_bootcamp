@@ -13,6 +13,7 @@ public class BankingSystem {
 
     private List<BankAccount> accounts;
 
+
     public BankingSystem() {
         this.accounts = loadAccountsFromCsv("accounts.csv");
     }
@@ -67,7 +68,7 @@ public class BankingSystem {
         scanner.close();
     }
 
-    private void createAccount(Scanner scanner) {
+    public void createAccount(Scanner scanner) {
         System.out.print("Enter initial balance for the new account: ");
         double initialBalance = scanner.nextDouble();
         System.out.print("Enter UID for the new account: ");

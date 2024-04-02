@@ -1,6 +1,6 @@
 package com.BankingApp;
 
-class BankAccount {
+public class BankAccount {
 
     private double balance;
     private String uId;
